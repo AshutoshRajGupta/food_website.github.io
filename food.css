@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0; margin: 0;
+    text-transform: capitalize;
+
+}
+/* for hovering on text */
+*::selection{
+    background: red;
+    color: #fff;
+}
+
+html{
+    font-size: 80%;
+    scroll-behavior: smooth;
+     padding-top: 1.5rem;
+}
+
+body{
+    background-color: azure;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+}
+.heading span{
+    color: red;
+}
+
+.btn{
+    color: red;
+    background: #fff;
+    padding: 4px;
+    margin-top: 2.5rem;
+    font-size: medium;
+    display: inline-block;
+    border: 1.5px solid  black;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color:yellow;
+}
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: .6rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   
+
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: aqua;
+    text-decoration: none;
+}
+
+header .logo i{
+    padding-right: .5rem;
+    color:red;
+    
+}
+
+header .navbar a{
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: red;
+}
+
+#menu{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#666;
+    border:.1rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display:none; 
+  }
+  
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .content{
+    flex:1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  
+  .home .image{
+    flex:1 1 40rem;
+  }
+  
+  .home .image img{
+
+    width:100%;
+    padding:1rem;
+    border: .1rem solid #000;
+    border-radius: .5rem;
+    
+  }
+  
+
+  
+  .home .content h3{
+    font-size: 3rem;
+    color:#333;
+  }
+  
+  .home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  
+
+
+
+  
+  .speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .speciality .box-container .box{
+    flex:1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+  
+  .speciality .box-container .box .image{
+    height:25rem;
+    width: 100%;
+    /* width:500px; */
+    object-fit:cover;
+    position:relative;
+    
+  }
+  
+  .speciality .box-container .box .content{
+    text-align: center;
+    background:#fff;
+    padding:2rem;
+  }
+  
+  .speciality .box-container .box .content img{
+    margin:1.5rem 0;
+  }
+  
+  .speciality .box-container .box .content h3{
+    font-size: 2rem;
+    color:#333;
+  }
+
+  .popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .popular .box-container .box{
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    position: relative;
+    flex:1 1 30rem;
+    padding: .5rem;
+  }
+
+  .popular .box-container .box img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .popular .box-container .box .price{
+    position: absolute;
+    background: red;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: .5rem;
+  }
+  .popular .box-container .box h3{
+    color:#333;
+    font-size: 2rem;
+    padding-top: 1rem;
+  }  
+
+.popular .box-container .box .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding: .6rem;
+}
+
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.steps .box{
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 1rem;
+    /* border-radius: 3rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); */
+}
+
+.steps .box img{
+    border-radius: 3rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.steps .box h3{
+    font-size: 3rem;
+    color: #333;
+    padding: 1rem;
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+
+  .review .box-container .box{
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: .5rem;
+    flex: 1 1 25rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .review .box-container .box img{
+    height: 12rem;
+    width:12rem;
+    border-radius: 50%;
+    border:1rem solid #fff;
+    object-fit: cover;
+    margin-top: -8rem;
+  } 
+
+
+  .review .box-container .box h3{
+    font-size: 2.5rem;
+    color:rgb(48, 33, 33);
+    padding:.5rem 0;
+  }
+  
+  .review .box-container .box .stars i{
+    font-size: 2rem;
+    color:gold;
+    padding:.5rem 0;
+  }
+
+  .review .box-container .box p{
+    font-size: 1.5rem;
+    color:rgb(53, 50, 50);
+    padding:1rem 0;
+  }
+
+  .order .row{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .order .row .image{
+    flex: 1 1 30rem;
+  }
+
+  .order .row .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
+
+  .order .row form{
+    flex: 1 1 40rem;
+    padding: 1rem;
+  }
+
+  .order .row form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .order .row form .inputbox input, .order .row form textarea{
+    padding:.5rem;
+    margin:1rem 0;
+    font-size: 1.2rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width:85%;
+  }
+
+  .order .row form textarea{
+    width:90%;
+    resize: none;
+    height:15rem;
+  }
+
+.footer{
+    background: #000;
+    text-align: center;
+}
+
+.footer .share{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    border-radius: 1rem;
+    
+}
+
+ .footer .share a ,btn{
+    border-radius: .5rem;
+    color: rgb(240, 104, 226);
+ }
+
+.footer .credit{
+    padding:2.5rem 1rem;
+    color:rgb(247, 248, 246);
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  
+  .footer .credit span{
+    color:red;
+  }
+
+
+
+
+
+
+
+/* media queries  */
+
+@media(max-width:991px){
+
+    html{
+      font-size: 55%;
+    }
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media(max-width:768px){
+  
+    #menu{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; left: 0; right:0;
+      background: #f7f7f7;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  
+    header .navbar a{
+      margin: 1.5rem;
+      padding:1.5rem;
+      display: block;
+      border:.2rem solid rgba(0,0,0,.1);
+      border-left:.5rem solid red;
+      background:#fff;
+    }
+  
+  }
+  
+  @media(max-width:450px){
+  
+    html{
+      font-size: 50%;
+    }
+  
+    .order .row form .inputbox input{
+      width:100%;
+    }
+  
+  }
